@@ -7,7 +7,7 @@
 #' @param dual_labels c("label1","label2") where these are the names for the legend
 #'
 #' This makes bar charts for each risk value
-#'
+#' @export
 #' @import ggplot2
 #' @import magrittr
 #' @import dplyr
@@ -17,7 +17,7 @@
 #' @import tibble
 #' @import stringr
 #'
-#' @export
+#'
 
 
 bar_charter = function(tab, var_title, doublebar = FALSE, dual_labels = NULL ) {

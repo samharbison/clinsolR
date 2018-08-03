@@ -7,7 +7,6 @@
 #' @param date2 upper bound date
 #' This function takes a visit data set and a demo graphics data set and returns
 #' a table of sums
-#'
 #' @export
 
 outcome_cat_table = function(status, demo, date1, date2) {
@@ -53,13 +52,12 @@ outcome_cat_table = function(status, demo, date1, date2) {
 #' @param date2 upper date limit
 #' This is a function that takes a subsetted visit date set from sort date
 #' and returns the number of visits and number of first visits in a table
-#'
 #' @export
 
 
 visit_table = function(status, date1, date2){
   out =bind_cols(" "=c("Number of Visits", "Number of First Visits"),
-                      Totals=rbind.data.frame(t(pacer_status %>%
+                      Totals=rbind.data.frame(t(status %>%
                                                     summarise(length(DATE),
                                                               sum(FIRSTVISIT)))
                       )
