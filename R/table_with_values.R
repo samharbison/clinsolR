@@ -39,6 +39,8 @@ twv_single = function(vec){
 #' This works in a similar manner as twv_singe, but it now makes tables with
 #' current, previous, and new participant vectors
 #' @export
+#' @importFrom stats na.omit
+#'
 
 twv_mult = function(current_vec, previous_vec, new_vec=NULL){
   if (is.null(new_vec)){
