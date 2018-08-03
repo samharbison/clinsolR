@@ -8,6 +8,7 @@
 #' This function takes a visit data set and a demo graphics data set and returns
 #' a table of sums
 #'
+#' @export
 
 outcome_cat_table = function(status, demo, date1, date2) {
   outcat = bind_cols(tibble(" " = c(
@@ -53,6 +54,7 @@ outcome_cat_table = function(status, demo, date1, date2) {
 #' This is a function that takes a subsetted visit date set from sort date
 #' and returns the number of visits and number of first visits in a table
 #'
+#' @export
 
 
 visit_table = function(status, date1, date2){

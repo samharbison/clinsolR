@@ -17,6 +17,8 @@
 #' @import stringr
 #' @import forcats
 #' @import glue
+#'
+#' @export
 
 
 loadDemo <- function(dir) {
@@ -37,6 +39,7 @@ loadDemo <- function(dir) {
 #' THis is a function that takes a directory path and returns the visit dataset
 #' for a company in question.
 #'
+#' @export
 
 
 loadStatus <- function(dir){

@@ -5,7 +5,7 @@
 #'
 #' @param vec is a vector of risk values
 #'
-#'
+#'@export
 
 
 
@@ -38,6 +38,8 @@ twv_single = function(vec){
 #'
 #' This works in a similar manner as twv_singe, but it now makes tables with
 #' current, previous, and new participant vectors
+#'
+#' @export
 
 twv_mult = function(current_vec, previous_vec, new_vec=NULL){
   if (is.null(new_vec)){
@@ -111,6 +113,7 @@ twv_mult = function(current_vec, previous_vec, new_vec=NULL){
 #' This function takes two  vectors of Risk values and creates a table of all
 #' combinations of the risk values for each visit
 #'
+#' @export
 
 twv_combo = function(current_vec, previous_vec){
   values = bind_cols(Previous = previous_vec, Current = current_vec) %>%

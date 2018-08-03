@@ -17,6 +17,7 @@
 #' @import tibble
 #' @import stringr
 #'
+#' @export
 
 
 bar_charter = function(tab, var_title, doublebar = FALSE, dual_labels = NULL ) {

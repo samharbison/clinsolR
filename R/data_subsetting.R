@@ -6,6 +6,8 @@
 #' This function takes a demographics data set, a visit data set and creates a list
 #' of the active employees and spouses. Spouses only returned it spouses parameter
 #' is equal to TRUE
+#'
+#' @export
 
 demo_visit = function(demo, status, spouse = TRUE){
   if (spouse == TRUE){
@@ -38,6 +40,7 @@ demo_visit = function(demo, status, spouse = TRUE){
 #' the demo_visit function to only include active employees and spouses) returns a filtered
 #' subset that is betweem the two date ranges. Both dates must be supplied.
 #'
+#' @export
 #'
 sort_date <- function(status, date1, date2) {
   stat_subset = status %>%
